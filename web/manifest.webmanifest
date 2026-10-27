@@ -1,0 +1,13 @@
+{
+  "name": "HallPay - longshore pay check",
+  "short_name": "HallPay",
+  "description": "Log every longshore shift, check the paycheck against your rates, track royalty hours and card expirations.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0d1620",
+  "theme_color": "#0d1620",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

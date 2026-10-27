@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>HallPay - longshore pay check</title>
+  <meta name="description" content="Log every longshore shift, check your paycheck against your rates, track royalty hours and card expirations. Works offline, stays on your phone.">
+  <meta name="theme-color" content="#0d1620">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <span class="mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <span class="word">HallPay</span>
+      <span class="tag">shift log &middot; pay check</span>
+    </div>
+    <nav class="tabs" role="tablist" aria-label="Sections">
+      <button role="tab" data-tab="shifts">Shifts</button>
+      <button role="tab" data-tab="pay">Paycheck</button>
+      <button role="tab" data-tab="royalty">Royalty</button>
+      <button role="tab" data-tab="cards">Cards<span class="dot" id="cardsDot" hidden></span></button>
+      <button role="tab" data-tab="rates">Rates</button>
+      <button role="tab" data-tab="get" class="get">Get HallPay</button>
+    </nav>
+  </header>
+
+  <main class="split" id="split" data-mode="list">
+    <section class="pane list" id="listPane" aria-label="List"></section>
+    <section class="pane detail" id="detailPane" aria-label="Detail"></section>
+  </main>
+
+  <footer class="foot">
+    <span>Your data stays on this phone. Not affiliated with the ILA, ILWU, USMX or PMA. Rates are what you enter &mdash; check them against your local's rate sheet.</span>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
